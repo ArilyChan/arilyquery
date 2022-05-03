@@ -1,0 +1,11 @@
+{
+  "name": "arilyquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Exsper",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
