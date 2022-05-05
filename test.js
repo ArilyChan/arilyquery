@@ -90,8 +90,7 @@ test();
 
 async function test() {
     let beststat = await aq.beststat({
-        user: "candy",
-        mode: "taiko",
+        user: "",
     });
     console.log(beststat);
 }
