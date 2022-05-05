@@ -76,13 +76,24 @@ async function test() {
 
 test();
 */
-
+/*
 async function test() {
     let score = await aq.score({
         id: "3539986417",
         mode: "osu",
     });
     console.log(score);
+}
+
+test();
+*/
+
+async function test() {
+    let beststat = await aq.beststat({
+        user: "candy",
+        mode: "taiko",
+    });
+    console.log(beststat);
 }
 
 test();
