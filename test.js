@@ -89,9 +89,12 @@ test();
 */
 
 async function test() {
-    let beststat = await aq.recent({
+    let beststat = await aq.best({
         user: "candy",
-        mode: "osu"
+        mode: "osu",
+        find: {
+            id: 1,
+        },
     });
     console.log(beststat);
 }
