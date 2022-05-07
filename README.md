@@ -31,11 +31,13 @@ console.log(user);
 ## best
 
 ```javascript
+// 指定时间段
 let best = await aq.best({
     user: "exmisser",
     mode: "mania",
     server: "sb",
     find: {
+        last: 3,
         date: {
             from: { year: 2020, month: 4, day: 3 },
             to: { year: 2022, month: 4, day: 3 },
@@ -43,6 +45,17 @@ let best = await aq.best({
     }
 }, "min", 15);
 console.log(best);
+
+// 指定序号
+let best2 = await aq.best({
+    user: "exmisser",
+    mode: "mania",
+    server: "sb",
+    find: {
+        id: 3
+    }
+});
+console.log(best2);
 ```
 
 ## beststat
